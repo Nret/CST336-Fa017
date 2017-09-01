@@ -1,3 +1,8 @@
+#thisPage {
+  font-size: 345%;
+  color: white;
+}
+
 .background {
     background-color: black;
     color: white;
@@ -10,7 +15,7 @@ header, main, nav, footer {
 nav a {
     padding: 15px;
     padding-bottom: 4px;
-    font-size: 2em;
+    font-size: 1.8em;
     text-decoration: none;
     color: white;
 }
@@ -25,8 +30,18 @@ nav a:hover {
     float: left;
 }
 
+#welcomeText {
+  text-align: left;
+}
+
 footer { /* Because the footer is the next element, we can clear float there */
     clear: left;
+    color: grey;
+    font-size: 80%;
+}
+
+footer img {
+  float: left;
 }
 
 /* Cool css magic slightly modified from https://codepen.io/brenden/pen/RNZXqx */
