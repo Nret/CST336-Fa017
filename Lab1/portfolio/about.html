@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Peter Pommer: Personal Portfolio</title>
     </head>
-    <body>
+    
+    <body class="background">
         <header>
-            
+            <h1>
+                Peter Pommer
+            </h1>
         </header>
+        
         <nav>
-            
+            <hr width="50%" /> <!-- same as index.html -->
+            <a href="index.html">Home</a>
+            <a href="about.html" id="thisPage">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
-        <main>
+        
+        <br /><br />
+        
+        <div id="content">
+            <!-- Table to hold the player's skills -->
+            <table>
+                <tr id="table-header">
+                    <td><strong>Programming Language</strong></td>
+                    <td><strong>Years Experience</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Java</td>
+                    <td>6</td>
+                </tr>
+                <tr class="table-row">
+                    <td>C++</td>
+                    <td>5</td>
+                </tr>
+                <tr class="table-row">
+                    <td>PHP</td>
+                    <td>1</td>
+                </tr>
+            </table>
             
-        </main>
+            <br />
+            
+            <span id="hobby-list-header">Hobbies<span style="color:white"> include:</span></span>
+            <ul>
+                <li><span class="hobby">Driving while listening to Human Music.</span></li>    
+                <li>Helping people with their <span class="hobby">Code</span>.</li>
+                <li>My favorite <span class="hobby">music</span> is Human Music.</li>
+                <li>I wish Rick didn't ruin my <span class="hobby">marriage with Beth</span></li> <!-- Rick and Morty reference, Jerry (profile picture) blames Rick in a recent episode for his relationship problems with his Ex(?) Wife Beth -->
+                <li><span class="hobby">Driving</span> my car.</li>
+            </ul>
+            
+        </div>
+        
         <footer>
-            
+            <hr>
+            CST 336. 2017&copy; Pommer
+            <br />
+            <strong>Disclaimer:</strong> The information in this webpage is <!-- a reference to rick and morty and to vaporwave --> fictious.
+            <br />
+            It is used for academic purposes only.
+            <br /><br />
+            <img src="img/otterimage.png" alt="CSUMB Logo" />
         </footer>
     </body>
 </html>

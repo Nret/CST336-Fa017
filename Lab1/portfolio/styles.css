@@ -1,3 +1,61 @@
+/* Styles for all pages */
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4em;
+  margin-bottom:  0px;
+}
+
+/* About.html styles */
+
+#content {
+  margin: 0px auto; 
+  text-align: center; 
+}
+
+table {
+  margin: 0px auto;
+}
+
+td {
+  padding-right: 10px;
+  font-size: 1.3em;
+}
+
+td strong {
+  color: orange;
+}
+
+#table-header {
+  background-color: #351a00;
+}
+
+.table-row {
+  background-color: #753900;
+}
+
+ul {
+  text-align: left;
+  /* Centers the ul on the page */
+  display: table;
+  margin: 0px auto;
+}
+
+.hobby {
+  color: yellow;
+}
+
+#hobby-list-header {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: yellow;
+}
+
+/* Index.html styles */
+
 .background {
     background-color: black;
     color: white;
