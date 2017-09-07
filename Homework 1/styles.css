@@ -1,0 +1,85 @@
+#index-enlarge-text {
+    font-size: 1.2em;
+}
+
+#swift-enlarge-text {
+    font-size: 2.3em;
+}
+
+#cplusplus-large {
+    font-size: 1.3em;
+}
+
+#cplusplus-large .code {
+    font-size: 1.3em;
+}
+
+.no-margin, .no-margin pre {
+    margin: 0 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.this-page {
+    color: #f2c300;
+}
+
+nav hr {
+    width: 50%;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #00b844;
+}
+nav a {
+    padding: 0 135px;
+    font-size: 6em;
+    text-decoration: none;
+    color: #0099f6;
+}
+
+main, header, nav, footer {
+    text-align: center;
+}
+
+.code {
+    padding: 0px 20px;
+    text-align: left;
+}
+
+.left {
+    position: absolute;
+    left: 200px;
+}
+
+.middle {
+    position: absolute;
+    left: 656px;
+}
+
+.right {
+    position: absolute;
+    right: 260px;
+}
+
+.code-block {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.cpp-page-block {
+    width: 640px; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+   /* padding: 10px;*/
+    position: relative;
+}
