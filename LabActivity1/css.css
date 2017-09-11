@@ -1,0 +1,20 @@
+.even-number {
+    background-color: blue;
+}
+
+.odd-number {
+    background-color: orange;
+}
+
+td {
+    color: white;
+    text-align: right;
+}
+
+p {
+    color: white;
+}
+
+body {
+    background-color: black;
+}
