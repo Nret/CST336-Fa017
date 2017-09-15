@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    background-image: url("../img/background.jpg");
+}
+
+.stats-text {
+    color: white;
+    background-color: black;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+
+.judge-q {
+    width: auto; /* 200px */
+    height: auto; /* 483px */
+    content: url("../img/judge_q.png");
+    
+    position: relative;
+    top: 325px;
+    left: 30px;
+}
+
+.user-selected-door {
+     box-shadow: 0px 0px 10px 5px #f2c300;
+}
+
+.door {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    position: absolute;
+}
+
+.door:hover, input.judge-q:hover {
+    border-color: transparent;
+    outline: 0;
+    box-shadow: 0px 0px 50px 10px #f2c300;
+    transition: all 0.3s ease-in-out;
+}
+
+.door-slot1 {
+    top: 420px;
+    left: 325px;
+}
+
+.door-slot2 {
+    top: 420px;
+    left: 650px;
+}
+
+.door-slot3 {
+    top: 420px;
+    left: 975px;
+}
