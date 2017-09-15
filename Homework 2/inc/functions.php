@@ -3,6 +3,9 @@
 $doorImages = array("DrWho.png", "bridge.png", "silly.png", "holodeck.png", "door.png");
 $doorChances = array(7, 35, 55, 75); // one less because door.png is the 'default' door if no other gets picked.
 
+$winImages = array("sovereign_bridge.jpg", "tng_bridge.jpg", "tos_bridge.jpg");
+$loseImages = array("duck.jpg");
+
 
 function randomDoor() {
     global $doorImages, $doorChances;
@@ -139,7 +142,7 @@ function continueGame() {
 }
 
 function renderReveal() {
-    global $level, $answer, $userSelectedDoor, $gamesPlayed, $gamesWon;
+    global $level, $answer, $userSelectedDoor, $gamesPlayed, $gamesWon, $winImages, $loseImages;
     
     $data = wrapState($level, $gamesPlayed, $gamesWon, 0, 0, 0, 0);
     
@@ -148,6 +151,11 @@ function renderReveal() {
     echo "<form method='POST'>";
     echo "<input name='data' value='$data' type='image' src='img/judge_q.png' class='judge-q' />";
     echo "</form>";
+    
+    if ($answer == $userSelectedDoor)
+        echo "<img class='win-lose-img' src='img/win/" . $winImages[rand(0, count($winImages) - 1)] . "' />";
+    else
+        echo "<img class='win-lose-img' src='img/lose/" . $loseImages[rand(0, count($loseImages) - 1)] . "' />";
     
 }
 
