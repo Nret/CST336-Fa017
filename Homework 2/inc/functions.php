@@ -147,16 +147,17 @@ function renderReveal() {
     $data = wrapState($level, $gamesPlayed, $gamesWon, 0, 0, 0, 0);
     
     
+    if ($answer == $userSelectedDoor) {
+        echo "<img class='win-lose-img' src='img/win/" . $winImages[rand(0, count($winImages) - 1)] . "' />";
+        echo "<p class='win-lose-text'>You WIN</p>";
+    } else {
+        echo "<img class='win-lose-img' src='img/lose/" . $loseImages[rand(0, count($loseImages) - 1)] . "' />";
+        echo "<p class='win-lose-text'>You LOSE</p>";
+    }
     
     echo "<form method='POST'>";
     echo "<input name='data' value='$data' type='image' src='img/judge_q.png' class='judge-q' />";
     echo "</form>";
-    
-    if ($answer == $userSelectedDoor)
-        echo "<img class='win-lose-img' src='img/win/" . $winImages[rand(0, count($winImages) - 1)] . "' />";
-    else
-        echo "<img class='win-lose-img' src='img/lose/" . $loseImages[rand(0, count($loseImages) - 1)] . "' />";
-    
 }
 
 function reveal() {

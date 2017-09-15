@@ -24,6 +24,15 @@ body {
     height: 800px;
 }
 
+.win-lose-text {
+    color: #f2c300;
+    font-size: 4em;
+    
+    position: absolute;
+    left: 15px;
+    top: 50px;
+}
+
 .judge-q {
     width: 200px; /* auto */
     height: 483px; /* auto */
