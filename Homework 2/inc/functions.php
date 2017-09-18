@@ -76,7 +76,7 @@ function renderNewGame() {
     
     $data = wrapState($level, $gamesPlayed, $gamesWon, $door1, $door2, $door3, $answer);
     
-    echo "<img class='judge-q oio' />";
+    echo "<img class='judge-q' />";
     
     echo "<div class='q-chat-bubble'>";
     echo "<div class='q-chat-text'>";
