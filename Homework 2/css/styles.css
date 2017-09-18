@@ -62,22 +62,11 @@ body {
 .judge-q {
     width: 200px; /* auto */
     height: 483px; /* auto */
-    content: url("../img/judge_q.png");
-    
+    /*content: url("../img/judge_q.png"); Firefox doesn't like =/*/
     position: relative;
     top: 325px;
     left: 30px;
 }
-.judge-q:after {
-    width: 200px; /* auto */
-    height: 483px; /* auto */
-    content: url("../img/judge_q.png");
-    
-    position: relative;
-    /*top: 325px;*/
-    left: 30px;
-}
-
 .user-selected-door {
      box-shadow: 0px 0px 10px 5px #f2c300;
 }

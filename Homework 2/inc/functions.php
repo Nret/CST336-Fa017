@@ -76,7 +76,7 @@ function renderNewGame() {
     
     $data = wrapState($level, $gamesPlayed, $gamesWon, $door1, $door2, $door3, $answer);
     
-    echo "<img class='judge-q' />";
+    echo "<img class='judge-q' src='img/judge_q.png' />";
     
     echo "<div class='q-chat-bubble'>";
     echo "<div class='q-chat-text'>";
@@ -123,7 +123,7 @@ function rendercontinueGame() {
     
     $data = wrapState($level, $gamesPlayed, $gamesWon, $door1, $door2, $door3, $answer);
     
-    echo "<img class='judge-q' />";
+    echo "<img class='judge-q' src='img/judge_q.png' />";
     
     echo "<div class='q-chat-bubble'>";
     echo "<div class='q-chat-text'>";
