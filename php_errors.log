@@ -1,58 +1,9 @@
-[09-Sep-2017 10:14:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/777/index.php on line 37
-[09-Sep-2017 10:14:03 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/777/index.php on line 37
-[13-Sep-2017 06:45:34 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 54
-[13-Sep-2017 06:45:34 UTC] PHP Stack trace:
-[13-Sep-2017 06:45:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[13-Sep-2017 07:10:47 UTC] PHP Fatal error:  Call to undefined function calculateData() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 60
-[13-Sep-2017 07:10:47 UTC] PHP Stack trace:
-[13-Sep-2017 07:10:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[13-Sep-2017 07:10:47 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[13-Sep-2017 07:10:47 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:101
-[13-Sep-2017 07:10:47 UTC] PHP   4. newgame() /home/ubuntu/workspace/Homework 2/inc/functions.php:91
-[13-Sep-2017 07:10:47 UTC] PHP   5. renderNewGame() /home/ubuntu/workspace/Homework 2/inc/functions.php:84
-[13-Sep-2017 07:10:50 UTC] PHP Fatal error:  Call to undefined function calculateData() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 60
-[13-Sep-2017 07:10:50 UTC] PHP Stack trace:
-[13-Sep-2017 07:10:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[13-Sep-2017 07:10:50 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[13-Sep-2017 07:10:50 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:101
-[13-Sep-2017 07:10:50 UTC] PHP   4. newgame() /home/ubuntu/workspace/Homework 2/inc/functions.php:91
-[13-Sep-2017 07:10:50 UTC] PHP   5. renderNewGame() /home/ubuntu/workspace/Homework 2/inc/functions.php:84
-[13-Sep-2017 07:10:51 UTC] PHP Fatal error:  Call to undefined function calculateData() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 60
-[13-Sep-2017 07:10:51 UTC] PHP Stack trace:
-[13-Sep-2017 07:10:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[13-Sep-2017 07:10:51 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[13-Sep-2017 07:10:51 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:101
-[13-Sep-2017 07:10:51 UTC] PHP   4. newgame() /home/ubuntu/workspace/Homework 2/inc/functions.php:91
-[13-Sep-2017 07:10:51 UTC] PHP   5. renderNewGame() /home/ubuntu/workspace/Homework 2/inc/functions.php:84
-[13-Sep-2017 07:10:52 UTC] PHP Fatal error:  Call to undefined function calculateData() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 60
-[13-Sep-2017 07:10:52 UTC] PHP Stack trace:
-[13-Sep-2017 07:10:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[13-Sep-2017 07:10:52 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[13-Sep-2017 07:10:52 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:101
-[13-Sep-2017 07:10:52 UTC] PHP   4. newgame() /home/ubuntu/workspace/Homework 2/inc/functions.php:91
-[13-Sep-2017 07:10:52 UTC] PHP   5. renderNewGame() /home/ubuntu/workspace/Homework 2/inc/functions.php:84
-[13-Sep-2017 07:49:17 UTC] PHP Fatal error:  Call to undefined function continueGame() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 105
-[13-Sep-2017 07:49:17 UTC] PHP Stack trace:
-[13-Sep-2017 07:49:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[13-Sep-2017 07:49:17 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[13-Sep-2017 07:49:17 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:113
-[15-Sep-2017 07:11:44 UTC] PHP Fatal error:  Call to undefined function reveal() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 149
-[15-Sep-2017 07:11:44 UTC] PHP Stack trace:
-[15-Sep-2017 07:11:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[15-Sep-2017 07:11:44 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[15-Sep-2017 07:11:44 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:155
-[15-Sep-2017 07:13:21 UTC] PHP Fatal error:  Call to undefined function reveal() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 149
-[15-Sep-2017 07:13:21 UTC] PHP Stack trace:
-[15-Sep-2017 07:13:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[15-Sep-2017 07:13:21 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[15-Sep-2017 07:13:21 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:155
-[15-Sep-2017 07:23:23 UTC] PHP Fatal error:  Call to undefined function reveal() in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 149
-[15-Sep-2017 07:23:23 UTC] PHP Stack trace:
-[15-Sep-2017 07:23:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[15-Sep-2017 07:23:23 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[15-Sep-2017 07:23:23 UTC] PHP   3. startLevel() /home/ubuntu/workspace/Homework 2/inc/functions.php:155
-[15-Sep-2017 08:35:51 UTC] PHP Warning:  Division by zero in /home/ubuntu/workspace/Homework 2/inc/functions.php on line 185
-[15-Sep-2017 08:35:51 UTC] PHP Stack trace:
-[15-Sep-2017 08:35:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
-[15-Sep-2017 08:35:51 UTC] PHP   2. play() /home/ubuntu/workspace/Homework 2/index.php:13
-[15-Sep-2017 08:35:51 UTC] PHP   3. showStatistics() /home/ubuntu/workspace/Homework 2/inc/functions.php:193
+[18-Sep-2017 03:14:43 UTC] PHP Warning:  include(/home/ubuntu/workspace/Homework 2/inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Homework 2/index.php on line 2
+[18-Sep-2017 03:14:43 UTC] PHP Stack trace:
+[18-Sep-2017 03:14:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
+[18-Sep-2017 03:14:43 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Homework 2/index.php on line 2
+[18-Sep-2017 03:14:43 UTC] PHP Stack trace:
+[18-Sep-2017 03:14:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0
+[18-Sep-2017 03:14:43 UTC] PHP Fatal error:  Call to undefined function play() in /home/ubuntu/workspace/Homework 2/index.php on line 13
+[18-Sep-2017 03:14:43 UTC] PHP Stack trace:
+[18-Sep-2017 03:14:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework 2/index.php:0

@@ -6,6 +6,8 @@ $doorChances = array(7, 35, 55, 75); // one less because door.png is the 'defaul
 $winImages = array("sovereign_bridge.jpg", "tng_bridge.jpg", "tos_bridge.jpg");
 $loseImages = array("duck.jpg");
 
+$quotes1 = array("Interesting selection.", "That would not have been my first selection.", "Great pick! Just what I would have done.", "Well, I guess you could pick that door.", "Do you know my friend Picard? I have a feeling he would be very good at this game.", "I have a feeling you know what you're doing.", "Would it be wrong to have suggested a different door.", "Wow. I don't think you could have done any better.");
+$quotes2 = array("Will you keep that door?", "Do you want to change?", "Keep it or change it, it doesn't matter to me.", "Hit? Or Stay? Wait is that a different game?", "Which do you choose now?");
 
 function randomDoor() {
     global $doorImages, $doorChances;
@@ -74,7 +76,25 @@ function renderNewGame() {
     
     $data = wrapState($level, $gamesPlayed, $gamesWon, $door1, $door2, $door3, $answer);
     
-    echo "<img class='judge-q' />";
+    echo "<img class='judge-q oio' />";
+    
+    echo "<div class='q-chat-bubble'>";
+    echo "<div class='q-chat-text'>";
+    echo "<p>";
+    echo "Welcome! Player ";
+    echo /*$ip = */$_SERVER['REMOTE_ADDR']?:($_SERVER['HTTP_X_FORWARDED_FOR']?:$_SERVER['HTTP_CLIENT_IP']);
+    echo "</p>";
+    echo "<p>";
+    echo "Have you ever played the <a href='https://en.wikipedia.org/wiki/Monty_Hall_problem'>Monty Hall problem</a>? Well this is that.";
+    echo "</p>";
+    echo "<p>";
+    echo "Pick a door. From the unpicked doors, I will remove a losing one. You may then keep your selection, or select the other door. Which is to your benifit?";
+    echo "</p>";
+    echo "<p>";
+    echo "Select correctly to get to the bridge. Select incorrectly..<!-- for a tribute -->.";
+    echo "</p>";
+    echo "</div>";
+    echo "</div>";
     
     echo "<form method='POST'>";
     echo "<input name='data' value='$data,0' type='image' src='img/doors/" . $doorImages[$door1] . "' class='door door-slot1' />";
@@ -99,11 +119,24 @@ function newgame() {
 }
 
 function rendercontinueGame() {
-    global $level, $answer, $door1, $door2, $door3, $userSelectedDoor, $doorImages, $gamesPlayed, $gamesWon;
+    global $level, $answer, $door1, $door2, $door3, $userSelectedDoor, $doorImages, $gamesPlayed, $gamesWon, $quotes1, $quotes2;
     
     $data = wrapState($level, $gamesPlayed, $gamesWon, $door1, $door2, $door3, $answer);
     
-     echo "<img class='judge-q' />";
+    echo "<img class='judge-q' />";
+    
+    echo "<div class='q-chat-bubble'>";
+    echo "<div class='q-chat-text'>";
+    echo "<p>";
+    echo $quotes1[rand(0, count($quotes1) - 1)];
+    echo "</p>";
+    echo "<p>";
+    echo "</p>";
+    echo "<p>";
+    echo "" . $quotes2[rand(0, count($quotes2) - 1)];
+    echo "</p>";
+    echo "</div>";
+    echo "</div>";
      
     echo "<form method='POST'>";
     if ($door1 != -1)

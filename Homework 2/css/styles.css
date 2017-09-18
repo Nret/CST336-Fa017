@@ -3,6 +3,31 @@ body {
     background-image: url("../img/background.jpg");
 }
 
+/* these 3 borrowed from https://codepen.io/Founts/pen/gmhcl */
+.q-chat-bubble {
+    background-color: #f2c300;
+    
+    margin: 40px;
+    position: absolute;
+    width: 1000px;
+    height: auto;
+    
+    top: 85px;
+    left: 200px;
+}
+
+.q-chat-text {
+    padding: 1em;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.q-chat-text p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
 .stats-text {
     color: white;
     background-color: black;
@@ -22,6 +47,7 @@ body {
     
     width: 950px;
     height: 800px;
+    
 }
 
 .win-lose-text {
