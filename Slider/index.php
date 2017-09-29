@@ -21,20 +21,20 @@
     }
     
     
-    if (isset($_GET['keyword'])) {
+    if (isset($_GET['keyword']) || isset($_GET['preset'])) {
         $amount = isset($_GET['amount']) ? $_GET['amount'] : 10;
-        //echo "You searched for: " . $_GET['keyword'];
         
         $layout = isset($_GET['layout']) ? $_GET['layout'] : "horizontal";
+        $phrase = isset($_GET['preset']) ? $_GET['preset'] : $_GET['keyword'];
         
-        include 'api/pixabayAPI.php';
-        $imageURLs = getImageURLs($_GET['keyword'], $layout);
-        
-        $backgroundImage = $imageURLs[array_rand(($imageURLs))]; // set background before killing the amount of imageurls we have
-        
-        $imageURLs = getRandomImages($imageURLs, $amount);
-        //print_r($imageURLs);
-        
+        if ($phrase !== "") {
+            include 'api/pixabayAPI.php';
+            $imageURLs = getImageURLs($phrase, $layout);
+            
+            $backgroundImage = $imageURLs[array_rand(($imageURLs))]; 
+            
+            $imageURLs = getRandomImages($imageURLs, $amount);
+        }
     }
 ?>
 
@@ -68,6 +68,13 @@
                    name="layout" value="vertical">
                   <label for="vertical">Vertical</label>
                 </div>
+                <select name="preset" style="color:black; font-size:1.5em">
+                     <option value=""> Optional: Presets </option>
+                     <option value="kitten">Kitten</option>
+                     <option value="puppies">Puppies</option>
+                     <option value="space">Space</option>
+                </select>
+                <br />
                 <div>
                     <input type="submit" value"Submit" />
                 </div>
