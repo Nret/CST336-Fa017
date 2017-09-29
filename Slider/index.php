@@ -76,7 +76,7 @@
                 </select>
                 <br /> <br /> 
                 <div>
-                    <input type="submit" value"Submit" />
+                    <input type="submit" value="Submit" />
                 </div>
             </fieldset>
         </form>
