@@ -74,7 +74,7 @@
                      <option value="puppies">Puppies</option>
                      <option value="space">Space</option>
                 </select>
-                <br />
+                <br /> <br /> 
                 <div>
                     <input type="submit" value"Submit" />
                 </div>
