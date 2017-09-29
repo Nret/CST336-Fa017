@@ -15,6 +15,9 @@
     <li>
         <a href="LabActivity1/">LabActivity1</a>
     </li>
+    <li>
+        <a href="Slider/">Slider</a>
+    </li>
 </ul>
 </body>
 </html>
