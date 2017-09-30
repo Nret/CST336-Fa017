@@ -25,7 +25,7 @@
         $amount = isset($_GET['amount']) ? $_GET['amount'] : 10;
         
         $layout = isset($_GET['layout']) ? $_GET['layout'] : "horizontal";
-        $phrase = isset($_GET['preset']) ? $_GET['preset'] : $_GET['keyword'];
+        $phrase = $_GET['preset'] !== "" ? $_GET['preset'] : $_GET['keyword'];
         
         if ($phrase !== "") {
             include 'api/pixabayAPI.php';
