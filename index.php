@@ -18,6 +18,9 @@
     <li>
         <a href="Slider/">Slider</a>
     </li>
+    <li>
+        <a href="Homework3/">Homework 3</a>
+    </li>
 </ul>
 </body>
 </html>
