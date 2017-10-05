@@ -1,6 +1,6 @@
 <?php
     $bgImgs = array("fire.1.jpg", "fire.2.jpg", "pixel.1.gif", "pixel.2.gif");
-    $bgImg = "backgrounds/" . $bgImgs[array_rand($bgImgs)];//"../backgrounds/pixel.2.gif"; // holy cow it mattered that these were the doule " and the background-image: url was single '
+    $bgImg = "backgrounds/" . $bgImgs[array_rand($bgImgs)]; // "../backgrounds/pixel.2.gif"; // holy cow it mattered that these were the doule " and the background-image: url() was single '
 ?>
 <!DOCTYPE html>
 <html>
