@@ -1,0 +1,8 @@
+[11-Oct-2017 08:13:42 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/Homework3/submit.php on line 41
+[11-Oct-2017 08:14:15 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/Homework3/submit.php on line 106
+[11-Oct-2017 08:25:54 UTC] PHP Parse error:  syntax error, unexpected 'c' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/Homework3/submit.php on line 126
+[11-Oct-2017 08:27:33 UTC] PHP Fatal error:  Call to undefined function str_pos() in /home/ubuntu/workspace/Homework3/submit.php on line 7
+[11-Oct-2017 08:27:33 UTC] PHP Stack trace:
+[11-Oct-2017 08:27:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework3/submit.php:0
+[11-Oct-2017 08:27:33 UTC] PHP   2. messageIsOk() /home/ubuntu/workspace/Homework3/submit.php:40
+[11-Oct-2017 08:43:00 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/Homework3/submit.php on line 182
