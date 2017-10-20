@@ -6,3 +6,21 @@
 [11-Oct-2017 08:27:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/Homework3/submit.php:0
 [11-Oct-2017 08:27:33 UTC] PHP   2. messageIsOk() /home/ubuntu/workspace/Homework3/submit.php:40
 [11-Oct-2017 08:43:00 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/Homework3/submit.php on line 182
+[20-Oct-2017 05:30:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/CST336-Fa017/Lab5/database.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/Lab5/database.php(8): PDO->__construct('mysql:host=;dbn...', '', '')
+#1 /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php(3): include('/home/ubuntu/wo...')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/Lab5/database.php on line 8
+[20-Oct-2017 05:31:53 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php on line 48
+[20-Oct-2017 05:31:53 UTC] PHP Stack trace:
+[20-Oct-2017 05:31:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php:0
+[20-Oct-2017 05:31:53 UTC] PHP   2. getDeviceTypes() /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php:75
+[20-Oct-2017 05:32:54 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php on line 48
+[20-Oct-2017 05:32:54 UTC] PHP Stack trace:
+[20-Oct-2017 05:32:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php:0
+[20-Oct-2017 05:32:54 UTC] PHP   2. getDeviceTypes() /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php:75
+[20-Oct-2017 05:33:23 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php on line 48
+[20-Oct-2017 05:33:23 UTC] PHP Stack trace:
+[20-Oct-2017 05:33:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php:0
+[20-Oct-2017 05:33:23 UTC] PHP   2. getDeviceTypes() /home/ubuntu/workspace/CST336-Fa017/Lab5/index.php:75
