@@ -10,7 +10,8 @@ function userList(){
   $conn = getDatabaseConnection();
   
   $sql = "SELECT *
-          FROM User";
+          FROM User
+          ORDER BY firstName";
   $stmt = $conn->prepare($sql);
   $stmt->execute();
   $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -35,6 +36,7 @@ function userList(){
             }
             
         </script>
+        <link rel="stylesheet" href="css.css">
     </head>
     <body>
 
@@ -46,8 +48,17 @@ function userList(){
                 <input type="submit" value="Add new user" />
                 
             </form>
+            
             <br />
             
+            <form action="logout.php">
+                
+                <input type="submit" value="Logout!" />
+                
+            </form>
+            
+            <br />
+            <div class='gray-bg'>
             <?php
             
              $users = userList();
@@ -55,10 +66,10 @@ function userList(){
              foreach($users as $user) {
                  
                  
-                 echo $user['id'] . "  " . $user['firstName'] . " " . $user['lastName'];
+                 echo "<span class='small-id'>" . $user['id'] . "</span> " . $user['firstName'] . " " . $user['lastName'];
                  
-                 echo "[<a href='updateUser.php?userId=".$user['id']."'> Update </a>] ";
-                 echo "[<a onclick='return confirmDelete()' href='deleteUser.php?userId=".$user['id']."'> Delete </a>] <br />";
+                 echo "[<a class='big' href='updateUser.php?userId=".$user['id']."'> Update </a>] ";
+                 echo "[<a class='small' onclick='return confirmDelete()' href='deleteUser.php?userId=".$user['id']."'> Delete </a>] <br />";
                  
                  
                  
@@ -67,6 +78,6 @@ function userList(){
              
              
              ?>
-            
+            </div>
     </body>
 </html>

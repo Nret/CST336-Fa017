@@ -27,7 +27,7 @@ function loginProcess() {
             
             if (empty($record)) {
                 
-                echo "Wrong Username or password";
+                echo "<span class='error'> Wrong Username or password </span>";
                 
             } else {
                 
@@ -47,9 +47,9 @@ function loginProcess() {
 <html>
     <head>
         <title> Admin Login  </title>
+        <link rel="stylesheet" href="css.css">
     </head>
     <body>
-
 
             <h1> Admin Login </h1>
             
@@ -65,6 +65,8 @@ function loginProcess() {
 
             <br />
             
+            
             <?=loginProcess()?>
+            
     </body>
 </html>
