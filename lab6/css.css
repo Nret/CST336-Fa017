@@ -1,0 +1,39 @@
+.error {
+    color: red;
+}
+
+body {
+    margin: 0 auto;
+}
+
+body {
+    text-align: center;
+}
+
+.big {
+    font-size: 1.3em;
+}
+
+.small {
+    font-size: .7em;
+}
+
+.small-id {
+    font-size: .555em;
+}
+
+.small:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
+}
+
+.big:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);  
+}
+
+.gray-bg {
+    background-color: lightgray;
+}
+
+.gray-bg {
+    display: block;
+}
