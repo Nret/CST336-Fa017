@@ -30,7 +30,7 @@ if (isset($_GET['addUser'])) {  //the add form has been submitted
              (:fName, :lName, :email, :role, :phone, :deptId)";
     $np = array();
     
-    //echo "$sql";
+    echo "$sql";
     
     $np[':fName'] = $_GET['firstName'];
     $np[':lName'] = $_GET['lastName'];
@@ -53,25 +53,9 @@ if (isset($_GET['addUser'])) {  //the add form has been submitted
 <html>
     <head>
         <title>Admin: Add new user</title>
-        <link rel="stylesheet" href="css.css">
     </head>
     <body>
-        <form action="admin.php">
-            
-            <input type="submit" value="back" />
-            
-        </form>
-        
-        <br />
-            
-        <form action="logout.php">
-            
-            <input type="submit" value="Logout!" />
-            
-        </form>
-        <br />
-        <br />
-        
+
 
             <h1> Adding New User </h1>
 

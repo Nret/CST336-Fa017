@@ -19,7 +19,7 @@ function getUserInfo() {
     $stmt = $conn->prepare($sql);
     $stmt->execute();
     $record = $stmt->fetch(PDO::FETCH_ASSOC);
-    //print_r($record);
+    print_r($record);
     
     return $record;
 
@@ -44,20 +44,12 @@ function departmentList(){
      
      $sql = "UPDATE User
              SET firstName = :fName,
-                 lastName  = :lName,
-                     email = :email,
-                     phone = :phone,
-                     role  = :role,
-                    deptId = :deptId
+                 lastName  = :lName
              WHERE id = :id";
-             
      $np = array();
+     
      $np[':fName'] = $_GET['firstName'];
      $np[':lName'] = $_GET['lastName'];
-     $np[':email'] = $_GET['email'];
-     $np[':phone'] = $_GET['phone'];
-     $np[':role'] = $_GET['role'];
-     $np[':deptId'] = $_GET['deptId'];
      $np[':id'] = $_GET['userId'];
      
      $stmt = $conn->prepare($sql);
@@ -84,27 +76,9 @@ function departmentList(){
 <html>
     <head>
         <title> Update User </title>
-        <link rel="stylesheet" href="css.css">
     </head>
     <body>
-        <br />
-            
-        <form action="admin.php">
-            
-            <input type="submit" value="back" />
-            
-        </form>
-        
-        <br />
-            
-        <form action="logout.php">
-            
-            <input type="submit" value="Logout!" />
-            
-        </form>
-        <br />
-        <br />
-        
+
         <h1> Tech Checkout System: Updating User's Info </h1>
         <form method="GET">
             <input type="hidden" name="userId" value="<?=$userInfo['id']?>" />
