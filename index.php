@@ -21,6 +21,9 @@
     <li>
         <a href="Homework3/">Homework 3</a>
     </li>
+    <li>
+        <a href="lab6/">Lab 6</a>
+    </li>
 </ul>
 </body>
 </html>
