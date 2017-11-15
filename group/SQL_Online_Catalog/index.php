@@ -51,7 +51,7 @@ function loadAllBooks($sort, $by) {
             echo "<td>" . $record['ibsn'] . "</td>";
             echo "<td>" . $record['year'] . "</td>";
             echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-            echo "<td><a href='?bookISBN=" . $record['bookId'] . "'>Add To Cart</a></td>";
+            echo "<td><a href='?bookISBN=" . $record['title'] . "'>Add To Cart</a></td>";
         echo "</tr>";
     }
     
@@ -83,7 +83,7 @@ function loadAllBooks($sort, $by) {
             echo "<td>" . $record2['year'] . "</td>";
             echo "<td>" . $record2['pages'] . "</td>";
             echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-            echo "<td><a href='?bookISBN=" . $record2['bookId'] . "'>Add To Cart</a></td>";
+            echo "<td><a href='?bookISBN=" . $record2['title'] . "'>Add To Cart</a></td>";
         echo "</tr>";
     }
     
@@ -116,7 +116,7 @@ function loadAllBooks($sort, $by) {
             echo "<td>" . $record3['year'] . "</td>";
             echo "<td>" . $record3['pages'] . "</td>";
             echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-            echo "<td><a href='?bookISBN=" . $record3['bookId'] . "'>Add To Cart</a></td>";
+            echo "<td><a href='?bookISBN=" . $record3['title'] . "'>Add To Cart</a></td>";
         echo "</tr>";
     }
     
@@ -153,7 +153,7 @@ function loadBooksByCatagory($filter, $sort) {
                 echo "<td>" . $record['ibsn'] . "</td>";
                 echo "<td>" . $record['year'] . "</td>";
                 echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-                echo "<td><a href='?bookISBN=" . $record['bookId'] . "'>Add To Cart</a></td>";
+                echo "<td><a href='?bookISBN=" . $record['title'] . "'>Add To Cart</a></td>";
             echo "</tr>";
         }
         
@@ -189,7 +189,7 @@ function loadBooksByCatagory($filter, $sort) {
                 echo "<td>" . $record2['year'] . "</td>";
                 echo "<td>" . $record2['pages'] . "</td>";
                 echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-                echo "<td><a href='?bookISBN=" . $record2['bookId'] . "'>Add To Cart</a></td>";
+                echo "<td><a href='?bookISBN=" . $record2['title'] . "'>Add To Cart</a></td>";
             echo "</tr>";
         }
         
@@ -224,7 +224,7 @@ function loadBooksByCatagory($filter, $sort) {
                 echo "<td>" . $record3['year'] . "</td>";
                 echo "<td>" . $record3['pages'] . "</td>";
                 echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-                echo "<td><a href='?bookISBN=" . $record3['bookId'] . "'>Add To Cart</a></td>";
+                echo "<td><a href='?bookISBN=" . $record3['title'] . "'>Add To Cart</a></td>";
             echo "</tr>";
         }
         
@@ -266,7 +266,7 @@ function loadBooksByYear($filter, $sort) {
                 echo "<td>" . $record['ibsn'] . "</td>";
                 echo "<td>" . $record['year'] . "</td>";
                 echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-                echo "<td><a href='?bookISBN=" . $record['bookId'] . "'>Add To Cart</a></td>";
+                echo "<td><a href='?bookISBN=" . $record['title'] . "'>Add To Cart</a></td>";
             echo "</tr>";
         }
         
@@ -299,7 +299,7 @@ function loadBooksByYear($filter, $sort) {
                 echo "<td>" . $record2['year'] . "</td>";
                 echo "<td>" . $record2['pages'] . "</td>";
                 echo "<td><a href='itemDetail.php?title=" . $record['title'] . "'>More Info</a></td>";
-                echo "<td><a href='?bookISBN=" . $record2['bookId'] . "'>Add To Cart</a></td>";
+                echo "<td><a href='?bookISBN=" . $record2['title'] . "'>Add To Cart</a></td>";
             echo "</tr>";
         }
         
