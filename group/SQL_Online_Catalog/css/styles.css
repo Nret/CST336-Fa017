@@ -1,0 +1,100 @@
+html {
+    font-family: sans-serif;
+}
+table {
+    margin: 0 auto;
+    margin-top: 15px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+table, th, td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+th{
+    color: #9E9191;
+    background: #DDD8D8;
+    
+}
+
+h1{
+    color: #8C4843;
+    
+}
+
+.word{
+    
+     font-weight: bold;
+      font-size: 19px;
+}
+
+img{
+    
+    padding-right: 7px;
+    display: inline-block;
+}
+
+a:link {
+    text-decoration: underline;
+    color: #3E737A;
+}
+
+a:hover {
+    text-decoration: none;
+    background: white;
+    color: #BAC1A8;
+}
+
+hr{
+    padding-bottom: 1px;
+  
+}
+
+a:active {
+    color: green;
+    text-decoration: none;
+}
+
+
+body {
+    
+    background-image: url("http://wallpapercraft.net/wp-content/uploads/2016/06/Open-book-2560x1600-photography-wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+input{
+    color: #995768;
+    background-color: #EFDCE9;
+    font-weight: bold;
+    
+}
+
+
+main{
+
+     background-color: rgba(255, 255, 255, 0.85);
+      padding-bottom: 5px;
+
+}
+
+h4 {
+    background: #F4EDFF;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+form{
+     color: #443627;
+    columns: 100px 4;
+    
+}
+
+footer {
+    color: red;
+    text-align: center;
+}
