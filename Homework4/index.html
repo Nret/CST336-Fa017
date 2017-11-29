@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            .circle {
+                border-radius: 50%;
+                display: inline-block;
+                margin-right: 20px;
+                
+        	    width: 30px;
+                height: 30px;
+                background: white;
+                position: absolute;
+                top: 55%;
+                left: 15%;
+                display: block;
+                border: 1px solid blue;
+            }
+            
+            .tall-door {
+                height: 500px;
+                padding: 5px;
+                border: 1px solid blue;
+            }
+        
+        </style>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+          <h1 id="title">Monte's Hall</h1>
+          <p id="text">You know the game! Pick a door. Then another door. Win or Lose.</p> 
+        </div>
+        <div class="container">
+            
+            <div class="row">
+              <div class="col-sm-4 text-center">
+                  <div id="door1" class="tall-door">
+                      <div class="circle" > </div>
+                      Door 1
+                  </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                   <div id="door2" class="tall-door">
+                       <div class="circle" > </div>
+                      Door 2
+                  </div>
+              </div>
+              <div class="col-sm-4 text-center">
+                   <div id="door3" class="tall-door">
+                       <div class="circle" > </div>
+                      Door 3
+                  </div>
+              </div>
+            </div>
+                
+        </div>
+        
+        <script>
+            var answer;
+            var attempt;
+            
+            $(document).ready(function() {
+                answer = Math.floor((Math.random() * 3) + 1);
+                attempt = 0;
+            });
+        
+        
+            $(".tall-door").click(doorClicked);
+            
+            
+            function doorClicked() {
+                attempt++;
+                
+                if (attempt < 3) {
+                    $(this).hide();
+                } else {
+                    var doorName = $(this).text().trim();
+                    
+                    var winlose = (doorName === ("Door " + answer)) ? "WIN!" : "Lose";
+                    
+                    $("#title").html("You " + winlose);
+                    $("#text").html("Refresh to play again");
+                    
+                }
+                
+            }
+        </script>
+    </body>
+</html>
