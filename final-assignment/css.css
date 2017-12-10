@@ -1,0 +1,208 @@
+#password-warning {
+    padding: 3px;
+    margin: 3px;
+}
+
+#submit-error {
+    padding: 3px;
+    margin: 3px;
+}
+
+.delete-button {
+    color: red !important;
+}
+
+.buy-button {
+    /* width: 50px; */
+    color: LimeGreen !important;
+    font-size: 30px;
+    padding-right: 10px !important;
+    margin: 0px !important;
+    /* padding-left: 10px !important; */
+}
+
+@keyframes changeWord {
+  0% {
+    content: "Buy";
+    padding-left: 0px !important;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    content: "Now";
+    padding-left: 0px !important;
+  }
+}
+
+.buy-now-animation:after {
+  content: "Buy";
+}
+
+.buy-now-animation:hover {
+  display: inline-table; /* flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.buy-now-animation:hover:after {
+    animation: changeWord 1s linear infinite alternate;
+    display: block; /* block; */
+    content: "Buy";
+  }
+
+.sell-button {
+    color: LimeGreen !important;
+    font-size: 20px;
+    padding: 3px !important;
+    margin: 0px !important;
+}
+ 
+#purchase-output {
+    margin: 25px;
+    display: none;
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 100px
+}
+
+#purchase-output span {
+    margin: 20px;
+}
+
+.success {
+    color: LimeGreen !important;
+    padding: 8px !important;
+    margin: 3px;
+}
+
+.fail {
+    background-color: lightpink !important;
+    padding: 8px !important;
+    margin: 3px;
+}
+
+.link {
+    color: blue;
+    text-decoration: overline underline;
+    margin: 20px;
+}
+
+input {
+    margin: 5px !important;
+}
+
+button {
+    margin: 5px !important;
+}
+
+.jumbotron {
+    padding-bottom: 25px !important;
+    padding-top: 25px !important;
+}
+
+.small-text {
+    font-size: 10px !important;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 3px !important;
+}
+
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+    content: "Buuy";
+  }
+}
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+    content: "Buuy";
+  }
+}
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098D1;
+  background-color: #2098d1;
+  color: white;
+}
+
+
+/* Pulse Shrink */
+@-webkit-keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    content: "Now";
+  }
+}
+@keyframes hvr-pulse-shrink {
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    content: "Now";
+  }
+}
+.hvr-pulse-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+  -webkit-animation-name: hvr-pulse-shrink;
+  animation-name: hvr-pulse-shrink;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+
+
+div.col-4, div.col-6 {
+    display: inline;
+}
+
+.row>[class^=col-] {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+
+div.row.text-center {
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}
+

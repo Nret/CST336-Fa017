@@ -140,3 +140,487 @@ Stack trace:
 #1 /home/ubuntu/workspace/CST336-Fa017/lab8/api.php(56): addUser()
 #2 {main}
   thrown in /home/ubuntu/workspace/CST336-Fa017/lab8/api.php on line 50
+[03-Dec-2017 03:39:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': )' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(37): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(40): updateDB('test')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 37
+[03-Dec-2017 03:39:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'heroku_9426e7a5fd13ba3.test' doesn't exist' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:37
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(37): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(40): updateDB('test')
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 37
+[03-Dec-2017 10:55:14 UTC] PHP Fatal error:  Cannot redeclare viewProducts() (previously declared in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:53) in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 75
+[04-Dec-2017 11:09:20 UTC] PHP Fatal error:  Call to undefined function sessions_start() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 78
+[04-Dec-2017 11:09:20 UTC] PHP Stack trace:
+[04-Dec-2017 11:09:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[04-Dec-2017 11:09:20 UTC] PHP   2. isLoggedIn() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:124
+[05-Dec-2017 09:45:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:45:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:45:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:45:24 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:45:29 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:45:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:45:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:07 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:08 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:09 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:10 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:37 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:46:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 77
+[05-Dec-2017 09:48:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 78
+[05-Dec-2017 09:48:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 78
+[05-Dec-2017 09:48:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 78
+[05-Dec-2017 09:48:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 78
+[05-Dec-2017 09:48:43 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 78
+[08-Dec-2017 10:17:09 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING) in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 169
+[08-Dec-2017 10:17:14 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING) in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 169
+[08-Dec-2017 10:17:26 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING) in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 169
+[08-Dec-2017 10:17:43 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING) in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 169
+[08-Dec-2017 11:10:31 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 179
+[08-Dec-2017 11:10:31 UTC] PHP Stack trace:
+[08-Dec-2017 11:10:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 11:10:31 UTC] PHP   2. deleteFromAction() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:203
+[08-Dec-2017 11:11:40 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 179
+[08-Dec-2017 11:11:40 UTC] PHP Stack trace:
+[08-Dec-2017 11:11:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 11:11:40 UTC] PHP   2. deleteFromAction() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:203
+[08-Dec-2017 11:13:42 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 179
+[08-Dec-2017 11:13:42 UTC] PHP Stack trace:
+[08-Dec-2017 11:13:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 11:13:42 UTC] PHP   2. deleteFromAction() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:203
+[08-Dec-2017 11:13:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' WHERE id = '171'' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(182): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(203): deleteFromAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 11:15:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' WHERE id = '171'' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(182): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(203): deleteFromAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 11:15:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''users' WHERE id = '171'' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(182): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(203): deleteFromAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 11:17:56 UTC] PHP Warning:  PDOStatement::execute(): MySQL server has gone away in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 11:17:56 UTC] PHP Stack trace:
+[08-Dec-2017 11:17:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 11:17:56 UTC] PHP   2. deleteFromAction() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:203
+[08-Dec-2017 11:17:56 UTC] PHP   3. PDOStatement->execute(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+[08-Dec-2017 11:17:56 UTC] PHP Warning:  PDOStatement::execute(): Error reading result set's header in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 11:17:56 UTC] PHP Stack trace:
+[08-Dec-2017 11:17:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 11:17:56 UTC] PHP   2. deleteFromAction() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:203
+[08-Dec-2017 11:17:56 UTC] PHP   3. PDOStatement->execute(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+[08-Dec-2017 11:17:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(182): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(203): deleteFromAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 11:20:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM 'users' WHERE id = '171'' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(182): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(203): deleteFromAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 11:24:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''users' WHERE id = '171'' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(182): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(203): deleteFromAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 14:01:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:01:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:02:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:02:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:02:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:03:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:04:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:04:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:04:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:04:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:04:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:10:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:10:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:11:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:12:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:14:14 UTC] PHP Warning:  PDOStatement::execute(): MySQL server has gone away in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:14:14 UTC] PHP Stack trace:
+[08-Dec-2017 14:14:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 14:14:14 UTC] PHP   2. searchProducts() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:246
+[08-Dec-2017 14:14:14 UTC] PHP   3. PDOStatement->execute(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+[08-Dec-2017 14:14:14 UTC] PHP Warning:  PDOStatement::execute(): Error reading result set's header in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:14:14 UTC] PHP Stack trace:
+[08-Dec-2017 14:14:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 14:14:14 UTC] PHP   2. searchProducts() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:246
+[08-Dec-2017 14:14:14 UTC] PHP   3. PDOStatement->execute(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+[08-Dec-2017 14:14:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:15:40 UTC] PHP Warning:  PDOStatement::execute(): MySQL server has gone away in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:15:40 UTC] PHP Stack trace:
+[08-Dec-2017 14:15:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 14:15:40 UTC] PHP   2. searchProducts() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:246
+[08-Dec-2017 14:15:40 UTC] PHP   3. PDOStatement->execute(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+[08-Dec-2017 14:15:40 UTC] PHP Warning:  PDOStatement::execute(): Error reading result set's header in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:15:40 UTC] PHP Stack trace:
+[08-Dec-2017 14:15:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 14:15:40 UTC] PHP   2. searchProducts() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:246
+[08-Dec-2017 14:15:40 UTC] PHP   3. PDOStatement->execute(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+[08-Dec-2017 14:15:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error: 2006 MySQL server has gone away' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:15:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%name% LIKE 'lol' OR %description% LIKE 'lol' OR price LIKE 'lol')' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:17:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%'lol'% OR description LIKE %'lol'% OR price LIKE 'lol')' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:205
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(205): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(246): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 205
+[08-Dec-2017 14:20:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '0' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:206
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(206): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(247): searchProducts()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 206
+[08-Dec-2017 15:19:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:20:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:22:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:22:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:22:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:26:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:26:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'where clause'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:26:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'where clause'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:26:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'where clause'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:27:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'where clause'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:27:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'where clause'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 15:28:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'where clause'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:239
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(239): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(286): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 239
+[08-Dec-2017 16:05:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where products.id = '11'' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:243
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(243): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(290): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 243
+[08-Dec-2017 16:19:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 246
+[08-Dec-2017 16:19:43 UTC] PHP Stack trace:
+[08-Dec-2017 16:19:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 16:19:43 UTC] PHP   2. buy() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:290
+[08-Dec-2017 17:40:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = NULL' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:182
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(182): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(291): deleteFromAction()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 182
+[08-Dec-2017 18:05:12 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 105
+[08-Dec-2017 18:05:12 UTC] PHP Stack trace:
+[08-Dec-2017 18:05:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 18:05:12 UTC] PHP   2. isLoggedIn() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:303
+[08-Dec-2017 18:05:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:247
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(247): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(318): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 247
+[08-Dec-2017 18:05:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:247
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(247): PDOStatement->execute(Array)
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(318): buy()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 247
+[08-Dec-2017 18:08:26 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 105
+[08-Dec-2017 18:08:26 UTC] PHP Stack trace:
+[08-Dec-2017 18:08:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 18:08:26 UTC] PHP   2. isLoggedIn() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:303
+[08-Dec-2017 18:09:12 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 105
+[08-Dec-2017 18:09:12 UTC] PHP Stack trace:
+[08-Dec-2017 18:09:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[08-Dec-2017 18:09:12 UTC] PHP   2. isLoggedIn() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:303
+[09-Dec-2017 01:06:15 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 01:06:15 UTC] PHP Stack trace:
+[09-Dec-2017 01:06:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 01:06:15 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 01:07:17 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 01:07:17 UTC] PHP Stack trace:
+[09-Dec-2017 01:07:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 01:07:17 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 01:08:11 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 01:08:11 UTC] PHP Stack trace:
+[09-Dec-2017 01:08:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 01:08:11 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 01:08:19 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 01:08:19 UTC] PHP Stack trace:
+[09-Dec-2017 01:08:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 01:08:19 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 01:09:13 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 01:09:13 UTC] PHP Stack trace:
+[09-Dec-2017 01:09:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 01:09:13 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 01:12:57 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 01:12:57 UTC] PHP Stack trace:
+[09-Dec-2017 01:12:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 01:12:57 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 02:21:47 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 02:21:47 UTC] PHP Stack trace:
+[09-Dec-2017 02:21:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 02:21:47 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 02:23:38 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 02:23:38 UTC] PHP Stack trace:
+[09-Dec-2017 02:23:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 02:23:38 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 02:24:13 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 02:24:13 UTC] PHP Stack trace:
+[09-Dec-2017 02:24:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 02:24:13 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 02:24:22 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 02:24:22 UTC] PHP Stack trace:
+[09-Dec-2017 02:24:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 02:24:22 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 02:24:39 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 02:24:39 UTC] PHP Stack trace:
+[09-Dec-2017 02:24:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 02:24:39 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 02:25:27 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 02:25:27 UTC] PHP Stack trace:
+[09-Dec-2017 02:25:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 02:25:27 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 02:28:44 UTC] PHP Fatal error:  Call to undefined method PDOException::message() in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 321
+[09-Dec-2017 02:28:44 UTC] PHP Stack trace:
+[09-Dec-2017 02:28:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 02:28:44 UTC] PHP   2. sell() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:365
+[09-Dec-2017 03:55:32 UTC] PHP Warning:  array_map(): Argument #2 should be an array in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 340
+[09-Dec-2017 03:55:32 UTC] PHP Stack trace:
+[09-Dec-2017 03:55:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 03:55:32 UTC] PHP   2. viewStats() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:366
+[09-Dec-2017 03:55:32 UTC] PHP   3. array_map() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:340
+[09-Dec-2017 03:55:52 UTC] PHP Warning:  array_map(): Argument #2 should be an array in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 340
+[09-Dec-2017 03:55:52 UTC] PHP Stack trace:
+[09-Dec-2017 03:55:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 03:55:52 UTC] PHP   2. viewStats() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:366
+[09-Dec-2017 03:55:52 UTC] PHP   3. array_map() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:340
+[09-Dec-2017 03:57:06 UTC] PHP Warning:  array_map(): Argument #2 should be an array in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 340
+[09-Dec-2017 03:57:06 UTC] PHP Stack trace:
+[09-Dec-2017 03:57:06 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 03:57:06 UTC] PHP   2. viewStats() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:366
+[09-Dec-2017 03:57:06 UTC] PHP   3. array_map(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:340
+[09-Dec-2017 04:20:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY DESC' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:371
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(371): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(390): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 371
+[09-Dec-2017 04:21:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BY balance DESC' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:371
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(371): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(390): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 371
+[09-Dec-2017 04:22:42 UTC] PHP Warning:  reset() expects parameter 1 to be array, string given in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 373
+[09-Dec-2017 04:22:42 UTC] PHP Stack trace:
+[09-Dec-2017 04:22:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 04:22:42 UTC] PHP   2. viewStats() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:390
+[09-Dec-2017 04:22:42 UTC] PHP   3. array_map(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:373
+[09-Dec-2017 04:22:42 UTC] PHP   4. reset(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:373
+[09-Dec-2017 04:22:42 UTC] PHP Warning:  reset() expects parameter 1 to be array, string given in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 373
+[09-Dec-2017 04:22:42 UTC] PHP Stack trace:
+[09-Dec-2017 04:22:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:0
+[09-Dec-2017 04:22:42 UTC] PHP   2. viewStats() /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:390
+[09-Dec-2017 04:22:42 UTC] PHP   3. array_map(*uninitialized*, *uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:373
+[09-Dec-2017 04:22:42 UTC] PHP   4. reset(*uninitialized*) /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:373
+[09-Dec-2017 04:43:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM users,ownerships WHERE ORDER BY balance DESC' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:378
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(378): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(394): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 378
+[09-Dec-2017 04:44:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'field list'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:377
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(377): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(393): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 377
+[09-Dec-2017 04:50:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'product.id' in 'field list'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:378
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(378): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(394): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 378
+[09-Dec-2017 04:56:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM ownerships WHERE products.id = ownerships.product_id) AS count FRO' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:378
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(378): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(394): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 378
+[09-Dec-2017 04:57:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT * FROM ownerships WHERE products.id = ownerships.product_id) AS count FRO' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:378
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(378): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(394): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 378
+[09-Dec-2017 05:11:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ownerships.product_id' in 'field list'' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:378
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(378): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(394): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 378
+[09-Dec-2017 05:12:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY products.id ORDER BY count DESC' at line 1' in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php:378
+Stack trace:
+#0 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(378): PDOStatement->execute()
+#1 /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php(394): viewStats()
+#2 {main}
+  thrown in /home/ubuntu/workspace/CST336-Fa017/final-assignment/api.php on line 378

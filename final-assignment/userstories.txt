@@ -1,0 +1,9 @@
+As an Admin, I want to easily manage the content in the database
+
+As a User, I want to be able to sort products by price
+As a User, I want to be able to search products by name and description
+
+
+As a User I would like to Buy stuff from the Store. I’d also like to be able to sell items I’ve purchased, and maybe have a little way to make money.
+
+As an Admin I would like to add Users and Items. I would also like to be able to edit what’s in the database easily. Also to be a user myself to test the functionality. And see some simple stats, no necessarily useful stats, but stats none the less.

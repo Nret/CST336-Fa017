@@ -1,0 +1,198 @@
+<html>
+    
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+    
+        function addUser() {
+             $.ajax({
+                type: "get",
+                url: "api.php",
+                dataType: "json",
+                data: {
+                    "action" : "addUser",
+                    "username" : $("#username").val(),
+                    "password" : $("#password").val(),
+                    "firstname" : $("#firstName").val(),
+                    "lastname" : $("#lastName").val(),
+                    "email" : $("#email").val(),
+                    "phone" : $("#phoneNumber").val()
+                },
+                complete: function(data, status) {
+                    console.log(status);
+                    console.log(data);
+                    $("#signup-result").html("  Submitted.");
+                }
+            });
+        }
+    
+        function testValidUser() {
+              $.ajax({
+                type: "get",
+                url: "api.php",
+                dataType: "json",
+                data: {
+                    "action" : "testValidUser",
+                    "username" : $("#username").val()
+                },
+                success: function(data, status) {
+                    
+                    if (data.valid == "true") {
+                        $("#username-result").html("Username is avaliable");
+                        $("#username").css({"background-color" : "lightgreen"});
+                    } else {
+                        $("#username-result").html("Username is taken");
+                        $("#username").css({"background-color" : "lightpink"});
+                    }
+                }
+            });
+        }
+        
+        
+        function checkPassword() {
+            var p1 = $("#password-first").val();
+            var p2 = $("#password-second").val();
+            
+            $("#password-valid").html("");
+            
+            if (p1 == "" || p2 == "") {
+                $("#password-first").css({"background-color" : ""});
+                $("#password-second").css({"background-color" : ""});
+                return;
+            }
+            
+            if (p1 == p2) {
+                if (p1.length < 8) {
+                    $("#password-first").css({"background-color" : "lightpink"});
+                    $("#password-second").css({"background-color" : "lightpink"});
+                    $("#password-valid").html("Passwords need to be at least 8 characters");
+                } else {
+                    $("#password-first").css({"background-color" : "lightgreen"});
+                    $("#password-second").css({"background-color" : "lightgreen"});
+                    $("#password-valid").html("");
+                }
+            } else {
+                $("#password-first").css({"background-color" : "lightpink"});
+                $("#password-second").css({"background-color" : "lightpink"});
+                $("#password-valid").html("Passwords do not match");
+            }
+            
+            
+        }
+    
+        function getCityInfo() {
+             $.ajax({
+                type: "get",
+                url: "http://hosting.otterlabs.org/laramiguel/ajax/zip.php",
+                dataType: "json",
+                data: {
+                    "zip_code": $("#zip").val()
+                },
+                success: function(data,status) {
+                    console.log(data); 
+                    if ($.isEmptyObject(data)) {
+                        $("#zip-code-error").html("Zip code not found");
+                        $("#lon").html("");
+                        $("#lat").html("");
+                        $("#zip").css({"background-color" : "lightpink"});
+                    } else {
+                        $("#zip-code-error").html("");
+                        $("#city").html(data.city);
+                        $("#lon").html(data.longitude);
+                        $("#lat").html(data.latitude);
+                        $("#zip").css({"background-color" : "lightgreen"});
+                    }
+                    
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                     //alert(status);
+                }
+             });
+        }
+        
+        
+        function getCountyInfo() {
+            $.ajax({
+                type: "get",
+                url: "http://hosting.otterlabs.org/laramiguel/ajax/countyList.php",
+                dataType: "json",
+                data: {
+                    "state": $("#stateList").val()
+                },
+                success: function(data,status) {
+                    
+                    $("#countyList").html("");
+                    console.log(data); 
+                    for (var d of data.counties) {
+                        if (d.county.length)
+                            $("#countyList").append($("<option>", { value: d.county, text: d.county }));
+                    }
+                    
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                     //alert(status);
+                }
+             });
+        }
+        
+    </script>
+</head>
+
+
+
+<body id="dummybodyid">
+    
+    <div class="jumbotron text-center">
+          <h1 id="title">Sign Up Form</h1>
+          <p id="text">With bootstrap. Pull yourself up by them.</p> 
+          <p>You should be able to add a user and then that username should be taken. 'test' is already a test user.</p>
+        </div>
+        <div class="container">
+            
+
+    <form onsubmit="return false;">
+        <fieldset>
+           <legend>Gimme them deets</legend>
+            First Name:  <input id="firstName" type="text"><br> 
+            Last Name:   <input id="lastName" type="text"><br> 
+            Email:       <input id="email" type="text"><br> 
+            Phone Number:<input id="phoneNumber" type="text"><br><br>
+            Zip Code:    <input id="zip" onchange="getCityInfo();" type="text"> <span id="zip-code-error"></span><br>
+            City:  <span id="city"></span>
+            <br>
+            Latitude: <span id="lon"></span>
+            <br>
+            Longitude: <span id="lat"></span>
+            <br><br>
+            State: 
+            <select onchange="getCountyInfo();" id="stateList" name="stateList">
+              <option value="ca">California</option>
+              <option value="nv">Nevada</option>
+              <option value="wa">Washington</option>
+              <option value="or">Oregon</option>
+            </select>
+            Select a County: <select id="countyList"></select><br>
+            
+            Desired Username: <input onchange="testValidUser();" id="username" type="text"> <span id="username-result"></span><br>
+            Password: <input  id="password-first" type="password"><span id='password-valid'></span><br>
+            Type Password Again: <input id='password-second' type="password"><br>
+            <input type="submit" onclick="addUser();" value="Sign up!"><span id="signup-result"></span>
+        </fieldset>
+    </form>
+    
+        </div>
+    
+    <script type="text/javascript">
+        $(document).ready(getCountyInfo);
+        $("#password-first").focusout(checkPassword);
+        $("#password-second").focusout(checkPassword);
+    </script>
+</body>
+
+</html>

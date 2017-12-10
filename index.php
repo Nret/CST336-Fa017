@@ -24,6 +24,10 @@
     <li>
         <a href="lab6/">Lab 6</a>
     </li>
+    <li>
+        <a href="final-assignment/">last thing made</a>
+    </li>
+    Notes: There's more, I just haven't linked them.
 </ul>
 </body>
 </html>

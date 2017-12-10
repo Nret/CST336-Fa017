@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="css.css" type="text/css" />
+        
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        
+        <script src="game.js"></script>
+        <script src="functions.js"></script>
+        <script src="zalgo.js"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron text-center">
+                <h1>Welcome to <span id="zalgofied"></span></h1>
+            </div>
+            <div id="login-container">
+                <fieldset class="text-left">
+                <legend>Login</legend>
+                    <div id="login-form">
+                        
+                    </div>
+                </fieldset>
+            </div>
+            <div id='result' class="container-fluid">
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            
+            function logout() {
+                alertLoading();
+                $.ajax({
+                type: "get",
+                url: "api.php",
+                dataType: "json",
+                data: { "action": "logout" },
+                success: function(data, status) {
+                    alertFinished();
+                    console.log(data);
+                    window.location.reload();
+                }});
+            }
+            
+           
+            
+            function loggedIn(data) {
+                if (data.isLoggedIn == "true") {
+                    $("#zalgofied").after(": " + data.first_name);
+                    $("#login-container").html("<span id='logout' class='link'>logout</span> || ");
+                    if (data.username == "admin")
+                        $("#login-container").append("<a id='admin-link' class='link' href='admin.php'>Admin</a> || ");
+                    $("#login-container").append("<span>Username: " + data.username + " </span> | ");
+                    $("#login-container").append("<span>Balanace: <span id='balance'>" + data.balance + "</span><span class='small-text'>cr</span></span> || ");
+                    $("#login-container").append("<span id='inventory' class='link'>Inventory</span> || ");
+                    $("#login-container").append("<span id='store' class='link'>Store</span> || ");
+                    $("#login-container").append("<span id='game' class='link'>Earn Credits</span> || ");
+                    
+                    $("#login-container").append("<span id='purchase-output'></span>");
+                    
+                    $("#logout").click(logout);
+                    $("#inventory").click(function () { generateTable("#result", "viewInventory", "sellable") });
+                    $("#store").click(function () { 
+                        generateTable("#result", "viewProducts", "buyable");
+                        showSearch("viewProducts", "buyable");
+                    });
+                    $("#game").click(function() {
+                        gameStart("#result");
+                    });
+                    $("#result").html("");
+                } else {
+                    $("#submit-error").html("Invalid username or password");
+                    $("#submit-error").show();
+                }
+            }
+            
+            // is logged in
+            alertLoading();
+            $.ajax({
+            type: "get",
+            url: "api.php",
+            dataType: "json",
+            data: { "action": "isLoggedIn" },
+            success: function(data, status) {
+                alertFinished();
+                console.log(data);
+                if (data.isLoggedIn == "true")
+                    loggedIn(data);
+            }});
+            
+            // login
+            
+            var names_columns = { 
+                                "User Name": "username", 
+                                "Password": "password" };
+                                
+            generateInputBoxes("#login-form", "login", names_columns, function(){
+                $("#submit-button").button("disable"); 
+                $("#submit-error").hide();
+            }, function(data) {
+                console.log(data);
+                loggedIn(data);
+            });
+            
+            $("#login-container").append("<br><br> || <span id='store' class='link'>Store</span> || ");
+            $("#store").click(function () { 
+                generateTable("#result", "viewProducts");
+                showSearch("viewProducts");
+            });
+            
+            var zalgoConverted = generateRandomZalgo("The Store", zalgoMarks, settings, true);
+            //console.log(zalgoConverted);
+            $("#zalgofied").html(zalgoConverted[1]);
+            $("#zalgofied").click(function() {
+                var zalgoConverted = generateRandomZalgo("The Store", zalgoMarks, settings, true);
+                //console.log(zalgoConverted);
+                $("#zalgofied").html(zalgoConverted[1]);
+            });
+            
+
+            
+      </script>
+    </body>
+</html>
